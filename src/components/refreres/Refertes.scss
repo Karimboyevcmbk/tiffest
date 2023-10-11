@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.container4{
+    height: 100vh;
+    background-color: #181818;
+    border-bottom: 7px solid gold;
+    .guest{
+        padding: 140px 70px;
+        padding-bottom: 70px;
+        .guestTitles{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h2{
+                font-size: 40px ;
+                font-family: 'Montseret',sans-serif;
+                color: #fff;
+            }
+            select{
+                background-color: #181818;
+                color: #fff;
+                padding: 10px 5px;
+                width: auto;
+                max-width: 320px;
+                font-size: 18px;
+                border-radius: 5px;
+                padding-right: 100px;
+                option{
+                    width: 320px; 
+                }
+            }
+        }
+        .mySwiper3{
+            height: 430px;
+            margin-top: 60px;
+            .mySwiperSections2{
+                height: 100%;
+                background-color:#fff ;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                border-radius: 5px;
+                position: relative;
+                
+                img{
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.5s;
+                }
+                img:hover{
+                    width: 115%;
+                    height: 115%;
+                    transition: 0.5s;
+                }
+                .actorName{
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+                    color: #fff;
+                    font-family: 'Motsaret',sans-serif;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+            }
+            .mySwiperSections2:hover{
+                border: 2px solid gold;
+            }
+        }
+    }
+}
+@media only screen and (max-width:1100px){
+    .container4{
+        .guest{
+            .guestTitles{
+                display: block;
+            }
+        }
+    }
+}
+@media only screen and (max-width:750px){
+    .container4{
+        .guest{
+            padding: 20px;
+            .guestTitles{
+                display: block;
+            }
+        }
+    }
+}
+@media only screen and (min-width:1500px){
+    .container4{
+        background-color: #181818;
+        height: 100vh;
+        width: 100%;
+        .guest{
+            width: 1500px;
+            margin: 0 auto;
+        }
+    }
+}
+@media only screen and (max-height:9000px){
+    .container4{
+        height: 900px;
+    }
+}
+@media only screen and (max-height:750px){
+    .container4{
+        height: 750px;
+    }
+}

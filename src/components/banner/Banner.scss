@@ -1,0 +1,113 @@
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../assets/bannerBacground.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 24px 0 24px;
+    border-bottom: 7px solid gold;
+    display: flex;
+    padding-right: 90px;
+    overflow: hidden;
+    .kubok{
+        height: 100vh;
+        width: 630px;
+        background-image: url("../../assets/kubok.webp");
+        background-size: cover;
+        background-position: top;
+    }
+    .bannerTitles{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 30px;
+        .title1{
+            background-image: url("../../assets/bannerTitler1.png");
+            width: 1000px;
+            height: 250px;
+            background-size: cover;
+        }
+    }
+}
+@media only screen and (max-width:2050px){
+    .banner{
+        display: flex;
+        flex-direction: column;
+        padding-right: 30px;
+        overflow: hidden;
+        padding-top: 350px;
+        padding: 0;
+        .kubok{
+            background-image: url("../../assets/bannerTitler1.png");
+            width: 600px;
+            height: 100px;
+            margin: 0 auto;
+            margin-top: 200px;
+        }
+        .bannerTitles{
+            padding: 0;
+            display: block;
+            margin: 0 auto;
+            .title1{
+                width: 600px;
+                height: 900px;
+                background-image: url("../../assets/kubok.webp");
+                margin: 0 auto;
+                background-position: top;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1500px){
+    .banner{
+        width: 100%;
+        margin: 0 auto;
+        .kubok{
+            width: 50%;
+        }
+        .bannerTitles{
+            width: 50%;
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    .banner{
+        width: 100%;
+        height: 100vh;
+        background-image: url("../../assets/bannerBacground.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 50px 24px 0 24px;
+        border-bottom: 7px solid gold;
+        display: flex;
+        overflow: hidden;
+        margin: 0 auto;
+        .kubok{
+            height: 50px;
+            max-width: 330px;
+            margin-top: 60px;
+            background-image: url("../../assets/bannerTitler1.png");
+            background-size: cover;
+            background-position: top;
+            z-index: 1000;
+        }
+        .bannerTitles{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            flex-direction: column;
+            .title1{
+                background-image: url("../../assets/kubok.webp");
+                width: 200px;
+                height: 770px;
+                background-size: cover;
+                margin: 0 auto  ;
+            }
+        }
+    }
+}
